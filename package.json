@@ -1,0 +1,24 @@
+{
+  "name": "eames-webpack-fundamentals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "angular": "^1.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --inline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ladrillo/webpack-fundamentals.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ladrillo/webpack-fundamentals/issues"
+  },
+  "homepage": "https://github.com/Ladrillo/webpack-fundamentals#readme"
+}
