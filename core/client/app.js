@@ -5,7 +5,7 @@ var uiRouter = require('angular-ui-router');
 
 var app = angular.module('app', [uiRouter]);
 
-require('./services/people.service.js')(app);
 require('./home/home.controller')(app);
+require('./services/people.service.js')(app);
 require('./routes')(app);
 

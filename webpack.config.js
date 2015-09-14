@@ -1,7 +1,12 @@
+var path = require('path');
+
 module.exports = {
-    entry: './core/client/app.js',
+    context: path.resolve('core/client'),
+    entry: './app.js',
     output: {
-        filename: './build/bundle.js'
+        path: path.resolve('build/'),
+        publicPath: '/build/',
+        filename: 'bundle.js'
     },
     module: {
         loaders: [
