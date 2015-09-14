@@ -1,0 +1,1 @@
+import stylistsController from './stylists.controller.es6';

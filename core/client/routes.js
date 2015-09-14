@@ -12,6 +12,16 @@ module.exports = function (app) {
                         controller: 'homeController'
                     },
                 }
+            })
+            .state('stylists', {
+                url: '/stylists',
+                views: {
+                    main: {
+                        template: require('./features/stylists/stylists.template.html'),
+                        controller: 'stylistsController',
+                        controllerAs: 'stylists'
+                    },
+                }
             });
     });
 };
