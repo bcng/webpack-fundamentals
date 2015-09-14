@@ -6,5 +6,5 @@ var app = angular.module('app', [uiRouter]);
 
 
 require('./routes')(app);
-require('./features/home/')(app);
-require('./features/stylists/');
+require('./features/home/')(app); // feature implemented in ES5
+require('./features/stylists/'); // feature partly implemented in ES6
