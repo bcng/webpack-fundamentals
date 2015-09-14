@@ -21,7 +21,22 @@ module.exports = {
         ],
         loaders: [
             {
+                test: /\.css$/,
+                exclude: /node_modules/,
+                loader: 'style-loader!css-loader'
+            },
+            {
+                ttest: /\.scss$/,
+                exclude: /node_modules/,
+                loader: 'style-loader!css-loader!sass-loader'
+            },
+            {
                 test: /\.es6$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader'
+            },
+            {
+                test: /\.js$/,
                 exclude: /node_modules/,
                 loader: 'babel-loader'
             },
