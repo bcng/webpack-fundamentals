@@ -1,18 +1,20 @@
-var express = require('express');
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+var port = process.env.PORT || 5000;
 
-var app = express();
 
-if (app.get('env') === 'development') {
-    var webpackMiddleware = require('webpack-dev-middleware'),
-        webpack = require('webpack'),
-        config = require('./webpack.config');
+// bringing the express and mongoose objects from config
+var mongoose = require('./core/server/config/mongoose'),
+    express = require('./core/server/config/express');
 
-    app.use(webpackMiddleware(webpack(config), {
-        inline: true,
-        publicPath: '/build/'
-    }));
-}
 
-app.use(express.static('./core/client'));
+var db = mongoose(),
+    app = express();
 
-app.listen(5000);
+
+
+app.listen(port, function () {
+    console.log('listening on ' + port);
+});
+
+
+module.exports = app;
