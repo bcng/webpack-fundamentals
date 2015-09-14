@@ -8,7 +8,7 @@ module.exports = function (app) {
                 url: '/',
                 views: {
                     main: {
-                        template: require('./home/home.template.html'),
+                        template: require('./features/home/home.template.html'),
                         controller: 'homeController'
                     },
                 }
