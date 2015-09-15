@@ -6,7 +6,7 @@ module.exports = function (app) {
         .post(usersCtrl.postUser)
         .get(usersCtrl.getUsers);
 
-    // THESE ENDPOINTS DO EXIST:
+    // THESE ENDPOINTS DO NOT EXIST:
     // app.route('/api/users/:id')
     //     .get(usersCtrl.getUser)
     //     .patch(usersCtrl.patchUser)
